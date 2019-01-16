@@ -1,0 +1,22 @@
+package com.company;
+
+public class Fibonacci {
+
+
+
+    public static int Fibonacci(int input){
+        int[] sequence = new int[input];
+
+        if (input == 0){
+            return 0;
+        }
+        else if (input == 1){
+            return 1;
+        }
+        else {
+            return Fibonacci(input - 1) + Fibonacci(input - 2);
+        }
+
+
+    }
+}
